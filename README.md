@@ -80,6 +80,62 @@ Configuration Example
 }
 ```
 
+## Dataset JSON Structure
+- dataset_name: The identifier for the type of TSP problem scenario (e.g., "tsp_10_50k_u_100x100").
+- total_count: Total number of TSP problems generated for this dataset.
+- total_parts: The number of parts into which the dataset is divided.
+- part_number: The current part number. This helps in organizing the dataset into multiple manageable files.
+- samples_in_part: The number of TSP samples contained in the current part.
+- number_of_cities: The number of cities (or nodes) in each TSP problem.
+- edge_weight_type: Type of the edge weight (e.g., "EUC_2D" for Euclidean distance in a 2-dimensional space).
+- grid_specs: Specifications of the grid where cities are placed, including starting and ending coordinates.
+- source_attribute: Attributes about the dataset source including a description and citation if applicable.
+
+
+## Example Problem in Dataset
+Each problem within the dataset is represented as an object within the "problems" array:
+
+- name: A unique identifier for the problem instance.
+- node_coordinates: An array of coordinates for each city involved in the problem. Coordinates are listed as [x, y] pairs.
+
+Example JSON Snippet
+```json
+{
+    "dataset_name": "tsp_10_50k_u_100x100",
+    "total_count": 50000,
+    "total_parts": 5,
+    "part_number": 1,
+    "samples_in_part": 10000,
+    "number_of_cities": 10,
+    "edge_weight_type": "EUC_2D",
+    "grid_specs": {
+        "x_start": 0,
+        "y_start": 0,
+        "x_end": 100,
+        "y_end": 100,
+        "step_size": null
+    },
+    "source_attribute": {
+        "description": "Synthetic TSP problems generated for algorithm testing.",
+        "citation": "Provided by ReadyTensor AI Lab"
+    },
+    "problems": [
+        {
+            "name": "476f819e919e34e5e38d08b7ccd0fa7b",
+            "node_coordinates": [
+                [17.9432, 24.2407],
+                [48.4047, 93.5308],
+                [48.746, 89.7431],
+                ...
+            ]
+        },
+        ...
+    ]
+}
+
+```
+
+
 ## How to Use
 
 1. Clone the repository:
