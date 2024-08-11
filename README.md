@@ -42,9 +42,9 @@ This configuration example provides details for a TSP scenario named "tsp_10_50k
 - Number of Nodes per Example: Each problem instance consists of 10 nodes.
 - Minimum Examples per Node: This parameter controls how often a specific node is used across different problem instances. If null, there is no minimum enforced, allowing for flexible node reuse.
 - Grid Specifications: Defines the grid on which nodes are placed:
- - x_start and y_start are the starting coordinates of the grid.
- - x_end and y_end define the ending coordinates, setting the grid's dimension.
- - step_size determines the grid's discretization. If null, the grid allows for continuous placement of nodes, meaning nodes can be located at any position within the specified dimensions.
+- x_start and y_start are the starting coordinates of the grid.
+  - x_end and y_end define the ending coordinates, setting the grid's dimension.
+  - step_size determines the grid's discretization. If null, the grid allows for continuous placement of nodes, meaning nodes can be located at any position within the specified dimensions.
 - Seed: Used to seed the random number generator for reproducibility.
 
 Example Scenario
