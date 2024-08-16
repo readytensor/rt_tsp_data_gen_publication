@@ -18,7 +18,8 @@ def save_generated_examples(
     total_parts: int,
     part_number: int,
     sampling_method: str,
-    metadata: Dict[str, Union[str, Dict[str, str]]]
+    metadata: Dict[str, Union[str, Dict[str, str]]],
+    version: str
 ) -> None:
     """
     Save generated TSP examples in JSON format.
@@ -35,6 +36,7 @@ def save_generated_examples(
         part_number (int): The number of the current part being generated.
         sampling_method (str): The method used for sampling points (e.g., "uniform").
         metadata (Dict[str, Union[str, Dict[str, str]]]): Metadata for the dataset.
+        version (str): Version number of the dataset format.
     """
     json_save_dir = os.path.join(save_dir_path, scenario)
     os.makedirs(json_save_dir, exist_ok=True)
@@ -52,6 +54,7 @@ def save_generated_examples(
         tsp_problems.append(tsp_dict)
 
     data = {
+        "version": version,
         "dataset_name": scenario,
         "description": description,
         "total_count": total_samples,

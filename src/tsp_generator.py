@@ -85,6 +85,7 @@ def main():
             part_number=i + 1,
             sampling_method=scenario_specs["sampling_method"],
             metadata=gen_config["metadata"],
+            version=gen_config["version"],
         )
 
 
