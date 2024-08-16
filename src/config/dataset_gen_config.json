@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "scenario": "tsp_200_50k_u_100x100",
+  "num_samples_per_file": 10000,
+  "metadata": {
+    "description": "Synthetic Traveling Salesman Problem (TSP) instances generated for algorithm testing and benchmarking.",
+    "creator": {
+      "name": "ReadyTensor Inc.",
+      "url": "https://www.readytensor.ai",
+      "email": "contact@readytensor.ai"
+    },
+    "license": "CC BY-SA 4.0"
+  }
+}

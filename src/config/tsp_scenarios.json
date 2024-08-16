@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "generation_scenarios": {
+    "tsp_10_50k_u_100x100": {
+      "description": "TSP with 10 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
+      "num_examples": 50000,
+      "num_nodes": 10,
+      "sampling_method": "uniform",
+      "coordinate_space": {
+        "x_start": 0,
+        "x_end": 100,
+        "y_start": 0,
+        "y_end": 100
+      },
+      "seed": 42
+    },
+    "tsp_20_50k_u_100x100": {
+      "description": "TSP with 20 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
+      "num_examples": 50000,
+      "num_nodes": 20,
+      "sampling_method": "uniform",
+      "coordinate_space": {
+        "x_start": 0,
+        "x_end": 100,
+        "y_start": 0,
+        "y_end": 100
+      },
+      "seed": 42
+    },
+    "tsp_25_50k_u_100x100": {
+      "description": "TSP with 25 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
+      "num_examples": 50000,
+      "num_nodes": 25,
+      "sampling_method": "uniform",
+      "coordinate_space": {
+        "x_start": 0,
+        "x_end": 100,
+        "y_start": 0,
+        "y_end": 100
+      },
+      "seed": 42
+    },
+    "tsp_50_50k_u_100x100": {
+      "description": "TSP with 50 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
+      "num_examples": 50000,
+      "num_nodes": 50,
+      "sampling_method": "uniform",
+      "coordinate_space": {
+        "x_start": 0,
+        "x_end": 100,
+        "y_start": 0,
+        "y_end": 100
+      },
+      "seed": 123
+    },
+    "tsp_100_50k_u_100x100": {
+      "description": "TSP with 100 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
+      "num_examples": 50000,
+      "num_nodes": 100,
+      "sampling_method": "uniform",
+      "coordinate_space": {
+        "x_start": 0,
+        "x_end": 100,
+        "y_start": 0,
+        "y_end": 100
+      },
+      "seed": 123
+    },
+    "tsp_200_50k_u_100x100": {
+      "description": "TSP with 200 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
+      "num_examples": 50000,
+      "num_nodes": 200,
+      "sampling_method": "uniform",
+      "coordinate_space": {
+        "x_start": 0,
+        "x_end": 100,
+        "y_start": 0,
+        "y_end": 100
+      },
+      "seed": 123
+    }
+  }
+}
