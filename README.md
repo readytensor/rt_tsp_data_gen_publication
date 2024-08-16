@@ -48,7 +48,7 @@ This file defines various TSP generation scenarios. Each scenario is uniquely na
 
 ```json
 {
-  "version": "1.1.0",
+  "version": "1.0.0",
   "generation_scenarios": {
     "tsp_10_50k_u_100x100": {
       "description": "TSP with 10 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
@@ -69,10 +69,11 @@ This file defines various TSP generation scenarios. Each scenario is uniquely na
 
 ### `dataset_gen_config.json`
 
-This file selects a scenario from `tsp_config.json` and defines the file splitting strategy for large datasets. It also contains the metadata for the dataset which can be customized as needed.
+This file selects a scenario from `tsp_scenarios.json` and defines the file splitting strategy for large datasets. It also contains the metadata for the dataset which can be customized as needed.
 
 ```json
 {
+  "version": "1.0.0",
   "scenario": "tsp_10_50k_u_100x100",
   "num_samples_per_file": 10000,
   "metadata": {
@@ -107,6 +108,7 @@ The generated dataset is saved in JSON format with the following structure:
 
 ```json
 {
+  "version": "1.0.0",
   "dataset_name": "tsp_10_50k_u_100x100",
   "description": "TSP with 10 nodes, 50,000 examples, uniformly sampled in a 100x100 coordinate space.",
   "total_count": 50000,
@@ -122,7 +124,7 @@ The generated dataset is saved in JSON format with the following structure:
   },
   "sampling_method": "uniform",
   "metadata": {
-    "description": "Synthetic TSP problems generated for algorithm testing.",
+    "description": "Synthetic Traveling Salesman Problem (TSP) instances generated for algorithm testing and benchmarking.",
     "creator": {
       "name": "ReadyTensor Inc.",
       "url": "https://www.readytensor.ai",
